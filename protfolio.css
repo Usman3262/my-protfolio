@@ -68,7 +68,7 @@ nav ul a:active {
   border-radius: 50%;
   justify-content: center;
   font-size: 2rem;
- 
+
   height: 4rem;
   width: 4rem;
   align-items: center;
@@ -148,12 +148,12 @@ nav ul a:active {
 }
 @media only screen and (max-width: 768px) {
   nav,
-ul {
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: smaller;
-}
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: smaller;
+  }
   .mainbox {
     display: grid;
   }
@@ -173,20 +173,20 @@ ul {
     color: var(--text-color--);
     font-size: 34px;
   }
-  .s-box {
-    width: 351px;
-    height: 256px;
-      margin: 10px;
-      border-radius: 20px;
-      background-color: var(--color--);
-      text-align: left;
-      padding: 20px;
-      color: var(--text-color--);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  overflow: hidden;
+  .back-div {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto; /* Center the back-div horizontally */
+    padding: 0 20px; /* Add some padding */
+    position: relative;
+    left: -130px;
+  }
+
+  .Services {
+    margin-left: 50% auto;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
@@ -213,12 +213,12 @@ ul {
     color: var(--text-color--);
     font-size: 34px;
   }
-  .back-div{
+  .back-div {
     justify-content: center;
     align-items: center;
     margin: 40px;
   }
-  .s-box{
+  .s-box {
     overflow: hidden;
     width: auto;
   }
@@ -308,17 +308,17 @@ ul {
 .s-box {
   width: 351px;
   height: 256px;
-    margin: 10px;
-    border-radius: 20px;
-    background-color: var(--color--);
-    text-align: left;
-    padding: 20px;
-    color: var(--text-color--);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-overflow: hidden;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: var(--color--);
+  text-align: left;
+  padding: 20px;
+  color: var(--text-color--);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .s-box h3 {
   color: var(--text-color--);
@@ -326,13 +326,12 @@ overflow: hidden;
   font-weight: 600;
   margin-bottom: 20px;
 }
-.back-div{
- display: flex;
- flex-wrap: wrap !important;
- margin: 50px;
- margin-top: 0px;
- margin-left: 150px;
-
+.back-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  margin-top: 0px;
+  margin-left: 150px;
 }
 .s-box:hover {
   transform: scale(1.01);
@@ -341,11 +340,10 @@ overflow: hidden;
     0 0 30px var(--shadow--);
 }
 .Services header {
-  color: var(--text-color--) ;
+  color: var(--text-color--);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 90px;
   font-weight: bolder;
-  
 }
